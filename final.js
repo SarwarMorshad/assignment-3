@@ -1,8 +1,8 @@
 /** Problem -01 ( Divide the Asset ) */
 var area = 800;
 //write your code here
-var eachLand = area / 2;
-console.log(eachLand);
+var individualLand = area / 2;
+console.log(individualLand);
 
 /** Problem -02 ( Cycle or Laptop ) */
 var money = 10000;
@@ -34,3 +34,22 @@ if (fileName.startsWith("#") || fileName.endsWith(".pdf") || fileName.endsWith("
 } else {
   console.log("Delete");
 }
+
+/** Problem 05 - ( PH Email Generator )  */
+var student = { name: "jhankar", roll: 1014, department: "cse" };
+//write your code here
+var email = student.name + student.roll + "." + student.department + "@ph.ac.bd";
+console.log(email);
+
+/** Problem 06 :  (Current Salary )  */
+var experience = 30;
+var startingSalary = 45000;
+//write your code here
+var salaryNow = startingSalary;
+
+for (var i = 1; i <= experience; i++) {
+  salaryNow = salaryNow + salaryNow * 0.05;
+}
+
+var twoDecimal = salaryNow.toFixed(2);
+console.log(twoDecimal);
